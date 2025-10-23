@@ -1,8 +1,8 @@
-package main
+package concurrency
 
 import "fmt"
 
-func main() {
+func UnbufferedChannels() {
 	c := make(chan string, 3) // Create a buffered channel with capacity 3
 
 	c <- "Message 1"

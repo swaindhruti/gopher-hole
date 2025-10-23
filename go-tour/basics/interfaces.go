@@ -9,7 +9,7 @@ type Abser interface {
 	Abs() float64
 }
 
-func main() {
+func Interfaces() {
 	var a Abser
 	f := MyFloat(-math.Sqrt2)
 	v := Vertex{3, 4}
