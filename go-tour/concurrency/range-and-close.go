@@ -9,7 +9,7 @@ func RangeAndClose() {
 
 	// Start a goroutine to send values to the channel
 	go func() {
-		for i := 0; i < 5; i++ {
+		for i := range 5 {
 			c <- i
 		}
 		close(c) // Close the channel after sending all values
