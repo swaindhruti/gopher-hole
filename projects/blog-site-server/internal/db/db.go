@@ -2,9 +2,10 @@ package db
 
 import (
 	"database/sql"
-	_ "github.com/lib/pq"
 	"log"
 	"os"
+
+	_ "github.com/lib/pq"
 )
 
 // DB is the global database connection pool
@@ -32,6 +33,11 @@ func InitializeDB() error {
 
 	log.Println("Database connection established")
 	return nil
+}
+
+// GetDB returns the database connection pool
+func GetDB() *sql.DB {
+	return DB
 }
 
 // CloseDB closes the database connection
