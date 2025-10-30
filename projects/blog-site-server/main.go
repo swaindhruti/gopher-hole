@@ -5,11 +5,10 @@ import (
 	"blog-app/internal/handlers"
 	"blog-app/internal/repository"
 	"blog-app/internal/routes"
+	"github.com/joho/godotenv"
 	"log"
 	"net/http"
 	"os"
-
-	"github.com/joho/godotenv"
 )
 
 func main() {
